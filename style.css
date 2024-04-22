@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+body{
+    min-height: 100vh;
+    background-color: ghostwhite;
+}
+
+.breadCrumbs{
+    height: 50px;
+}
+
+.ubuntu-condensed-regular {
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navigation-menu {
+    height: 65px;
+    background-color: #38393c;
+}
+
+.navigation-menu>ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch; 
+}
+
+.navigation-menu a {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    color: ghostwhite;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+
+}
+
+.breadCrumbs a{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0 1rem;
+}
+
+.breadCrumbs a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navigation-menu a:hover{
+    cursor: pointer;
+    background-color: ghostwhite;
+    color: #38393c;
+    transition-duration: 600ms;
+}
+
+.breadCrumbs>ul{
+    height: 100%;
+    display: flex;
+    margin-inline-start: 1.5rem; 
+}
+
+.breadCrumbs li{
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+.breadCrumbs li:not(:last-child):after{
+    content: ">";
+}
+
+.breadCrumbs li:not(:last-child)>a{
+    color: #777;
+}
+
+.breadCrumbs li:last-child>a{
+    background-color: #38393c;
+    color: ghostwhite;
+    padding: 8px;
+    border-radius: 16px;
+    margin-inline-start: 8px;
+}
+
+.breadCrumbs li:last-child>a:hover{
+    cursor: default;
+    text-decoration: none;
+
+}
+
